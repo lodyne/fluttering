@@ -13,12 +13,21 @@ class HomePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('HomeComing'),
+          title: const Center( 
+            child: Text(
+              'Photo Album',
+              style: TextStyle(
+                fontSize: 30.0,
+                fontStyle: FontStyle.italic,
+                letterSpacing: 1.2,
+                color: Colors.pink,
+              ),
+              ),
+          ) ,
           backgroundColor: Colors.lightBlue,
         ),
       backgroundColor: Colors.pink,
-      ),
-      
+      ),    
     );
   }
 }
