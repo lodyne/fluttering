@@ -14,21 +14,22 @@ dependencies:
         sdk: flutter
     google_fonts: ^2.2.0
 
-# fonts:
-#     - family: IndieFlower
-#       fonts:
-#           - asset: fonts/IndieFlower-Regular.ttf
-
-#     - family: Luxurious Roman
-#       fonts:
-#           - asset: fonts/LuxuriousRoman-Regular.ttf
 
 dev_dependencies:
     flutter_lints: ^1.0.0
     flutter_test:
         sdk: flutter
 
-# flutter:
-#     uses-material-design: true
-#     assets:
-#         - images/
+flutter:
+  uses-material-design: true
+  assets:
+    - images/
+
+  fonts:
+    - family: IndieFlower
+      fonts:
+        - asset: fonts/IndieFlower-Regular.ttf
+
+    - family: Luxurious Roman
+      fonts:
+        - asset: fonts/LuxuriousRoman-Regular.ttf
