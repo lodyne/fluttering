@@ -33,15 +33,26 @@ class HomePage extends StatelessWidget {
         //   ),
         // ),
         body: Center(
-          child: TextButton(
-              onPressed: () {
-                print('clicked');
-              },
-              child: const Icon(
-                Icons.home,
-                color: Colors.indigo,
-                size: 50.0,
-              )),
+          child: ElevatedButton.icon(
+            onPressed: () {
+              print('clicked');
+            },
+            icon: const Icon(
+              Icons.home,
+              color: Colors.indigo,
+              size: 50.0,
+            ),
+            label: const Text(
+              "HomeComing",
+              style: TextStyle(
+                fontSize: 20.0,
+                fontStyle: FontStyle.italic,
+                fontFamily: 'IndieFlower',
+                letterSpacing: 0.5,
+                color: Colors.pink,
+              ),
+            ),
+          ),
         ),
         backgroundColor: Colors.pink,
         // bottomNavigationBar: BottomNavigationBar(
