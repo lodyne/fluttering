@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget {
             label: const Text(
               "HomeComing",
               style: TextStyle(
-                fontSize: 20.0,
+                fontSize: 30.0,
                 fontStyle: FontStyle.italic,
                 fontFamily: 'IndieFlower',
                 letterSpacing: 0.5,
@@ -55,19 +55,14 @@ class HomePage extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.pink,
-        // bottomNavigationBar: BottomNavigationBar(
-        //   items: const [
-        //     BottomNavigationBarItem(
-        //         icon: Icon(
-        //       Icons.home,
-        //     )),
-        //     BottomNavigationBarItem(
-        //       icon: Icon(
-        //         Icons.search,
-        //       ),
-        //     )
-        //   ],
-        // ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.add,
+              )),
+        ),
       ),
     );
   }
