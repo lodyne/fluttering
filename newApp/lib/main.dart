@@ -27,37 +27,43 @@ class HomePage extends StatelessWidget {
           ),
           backgroundColor: Colors.lightBlue,
         ),
-        // body: const Center(
-        //   child: Image(
-        //     image: AssetImage('images/bestyou.jpg'),
-        //   ),
-        // ),
-        body: Container(
-          color: Colors.amber,
-          padding: const EdgeInsets.fromLTRB(20, 10, 20, 30),
-          margin: const EdgeInsets.symmetric(horizontal: 170, vertical: 250),
-          child: const Text('hello'),
-
-          // child: ElevatedButton.icon(
-          //   onPressed: () {
-          //     print('clicked');
-          //   },
-          //   icon: const Icon(
-          //     Icons.home,
-          //     color: Colors.indigo,
-          //     size: 50.0,
-          //   ),
-          //   label: const Text(
-          //     "HomeComing",
-          //     style: TextStyle(
-          //       fontSize: 30.0,
-          //       fontStyle: FontStyle.italic,
-          //       fontFamily: 'IndieFlower',
-          //       letterSpacing: 0.5,
-          //       color: Colors.pink,
-          //     ),
-          //   ),
-          // ),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                width: 100.0,
+                color: Colors.red,
+                child: const Text('Container 1'),
+              ),
+              const SizedBox(
+                width: 30.0,
+              ),
+              Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.yellow,
+                  child: const Text('Container 2.1'),
+                ),
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.green,
+                  child: const Text('Container 2.2'),
+                ),
+              ]),
+              const SizedBox(
+                width: 30.0,
+              ),
+              Container(
+                  width: 100.0,
+                  color: Colors.blue,
+                  child: const Text('Container 3')),
+            ],
+          ),
         ),
         // backgroundColor: Colors.pink,
         floatingActionButton: FloatingActionButton(
