@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Center(
             child: Text(
-              'Photo Album',
+              'My Portfolio',
               style: TextStyle(
                 fontSize: 30.0,
                 fontStyle: FontStyle.italic,
@@ -29,41 +29,80 @@ class HomePage extends StatelessWidget {
         ),
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                width: 100.0,
-                color: Colors.red,
-                child: const Text('Container 1'),
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            const Center(
+              child: CircleAvatar(
+                radius: 50.0,
+                // backgroundImage: AssetImage('images/lody.jpeg'),
+                backgroundImage: AssetImage('images/Cover.jpg'),
               ),
-              const SizedBox(
-                width: 30.0,
+            ),
+            const SizedBox(
+              height: 20.0,
+            ),
+            const Text(
+              'Lodyne Mark',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontFamily: 'IndieFlower',
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
-              Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.yellow,
-                  child: const Text('Container 2.1'),
+            ),
+            const Text(
+              'Software Developer',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontFamily: 'LuxuriousRoman',
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            const SizedBox(
+              height: 20.0,
+            ),
+            Card(
+              // padding: const EdgeInsets.all(10),
+              margin: const EdgeInsets.fromLTRB(20, 10, 20, 20),
+              color: Colors.white,
+              child: Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Row(
+                  children: const [
+                    Icon(
+                      Icons.add_call,
+                      color: Colors.purpleAccent,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text('+255-685487031'),
+                  ],
                 ),
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.green,
-                  child: const Text('Container 2.2'),
-                ),
-              ]),
-              const SizedBox(
-                width: 30.0,
               ),
-              Container(
-                  width: 100.0,
-                  color: Colors.blue,
-                  child: const Text('Container 3')),
-            ],
-          ),
+            ),
+            Card(
+              // padding: const EdgeInsets.all(10),
+              margin: const EdgeInsets.fromLTRB(20, 10, 20, 20),
+              color: Colors.white,
+              child: Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Row(
+                  children: const [
+                    Icon(
+                      Icons.mail,
+                      color: Colors.redAccent,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text('lodgmtui@gmail.com'),
+                  ],
+                ),
+              ),
+            ),
+            ElevatedButton(onPressed: () {}, child: const Text('Hello')),
+          ]),
         ),
         // backgroundColor: Colors.pink,
         floatingActionButton: FloatingActionButton(
