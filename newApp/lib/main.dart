@@ -60,45 +60,48 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(
               height: 20.0,
-            ),
-            Card(
-              // padding: const EdgeInsets.all(10),
-              margin: const EdgeInsets.fromLTRB(20, 10, 20, 20),
-              color: Colors.white,
-              child: Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Row(
-                  children: const [
-                    Icon(
-                      Icons.add_call,
-                      color: Colors.purpleAccent,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('+255-685487031'),
-                  ],
-                ),
+              width: 180.0,
+              child: Divider(
+                color: Colors.indigo,
+                thickness: 5.0,
               ),
             ),
-            Card(
+            const Card(
               // padding: const EdgeInsets.all(10),
-              margin: const EdgeInsets.fromLTRB(20, 10, 20, 20),
+              margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
               color: Colors.white,
-              child: Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Row(
-                  children: const [
-                    Icon(
-                      Icons.mail,
-                      color: Colors.redAccent,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('lodgmtui@gmail.com'),
-                  ],
+              child: ListTile(
+                leading: Icon(
+                  Icons.add_call,
                 ),
+                title: Text(
+                  '0685487031',
+                  style: TextStyle(
+                    fontFamily: 'Lato-Light',
+                    fontSize: 18.0,
+                  ),
+                ),
+                textColor: Colors.black,
+                iconColor: Colors.purpleAccent,
+              ),
+            ),
+            const Card(
+              // padding: const EdgeInsets.all(10),
+              margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
+              color: Colors.white,
+              child: ListTile(
+                leading: Icon(
+                  Icons.mail,
+                ),
+                title: Text(
+                  'lodgmtui@gmail.com',
+                  style: TextStyle(
+                    fontFamily: 'Lato-Light',
+                    fontSize: 18.0,
+                  ),
+                ),
+                textColor: Colors.black,
+                iconColor: Colors.redAccent,
               ),
             ),
             ElevatedButton(onPressed: () {}, child: const Text('Hello')),

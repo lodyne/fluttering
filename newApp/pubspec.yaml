@@ -33,3 +33,7 @@ flutter:
     - family: Luxurious Roman
       fonts:
         - asset: fonts/LuxuriousRoman-Regular.ttf
+
+    - family: Lato
+      fonts:
+        - asset: fonts/Lato-Light.ttf
