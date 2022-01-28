@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Center(
             child: Text(
-              'My Portfolio',
+              'HomePage',
               style: TextStyle(
                 fontSize: 30.0,
                 fontStyle: FontStyle.italic,
@@ -29,95 +29,86 @@ class HomePage extends StatelessWidget {
         ),
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            const Center(
-              child: CircleAvatar(
-                radius: 50.0,
-                // backgroundImage: AssetImage('images/lody.jpeg'),
-                backgroundImage: AssetImage('images/Cover.jpg'),
-              ),
-            ),
-            const SizedBox(
-              height: 20.0,
-            ),
-            const Text(
-              'Lodyne Mark',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontFamily: 'IndieFlower',
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
-            ),
-            const Text(
-              'Software Developer',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontFamily: 'LuxuriousRoman',
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
-            ),
-            const SizedBox(
-              height: 20.0,
-              width: 180.0,
-              child: Divider(
-                color: Colors.indigo,
-                thickness: 5.0,
-              ),
-            ),
-            const Card(
-              // padding: const EdgeInsets.all(10),
-              margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
-              color: Colors.white,
-              child: ListTile(
-                leading: Icon(
-                  Icons.add_call,
-                ),
-                title: Text(
-                  '0685487031',
-                  style: TextStyle(
-                    fontFamily: 'Lato-Light',
-                    fontSize: 18.0,
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Center(
+                  child: CircleAvatar(
+                    radius: 50.0,
+                    // backgroundImage: AssetImage('images/lody.jpeg'),
+                    backgroundImage: AssetImage('images/Cover.jpg'),
                   ),
                 ),
-                textColor: Colors.black,
-                iconColor: Colors.purpleAccent,
-              ),
-            ),
-            const Card(
-              // padding: const EdgeInsets.all(10),
-              margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
-              color: Colors.white,
-              child: ListTile(
-                leading: Icon(
-                  Icons.mail,
+                SizedBox(
+                  height: 20.0,
                 ),
-                title: Text(
-                  'lodgmtui@gmail.com',
+                Text(
+                  'Lodyne Mark',
                   style: TextStyle(
-                    fontFamily: 'Lato-Light',
-                    fontSize: 18.0,
+                    fontSize: 20.0,
+                    fontFamily: 'IndieFlower',
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
                 ),
-                textColor: Colors.black,
-                iconColor: Colors.redAccent,
-              ),
-            ),
-            ElevatedButton(onPressed: () {}, child: const Text('Hello')),
-          ]),
+                Text(
+                  'Software Developer',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'LuxuriousRoman',
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(
+                  height: 20.0,
+                  width: 180.0,
+                  child: Divider(
+                    color: Colors.indigo,
+                    thickness: 5.0,
+                  ),
+                ),
+                Card(
+                  // padding: const EdgeInsets.all(10),
+                  margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
+                  color: Colors.white,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.laptop,
+                    ),
+                    title: Text(
+                      'I\'m proficient in Web Development.',
+                      style: TextStyle(
+                        fontFamily: 'Lato-Light',
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    textColor: Colors.black,
+                    iconColor: Colors.purpleAccent,
+                  ),
+                ),
+                Card(
+                  // padding: const EdgeInsets.all(10),
+                  margin: EdgeInsets.fromLTRB(20, 10, 20, 20),
+                  color: Colors.white,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.language,
+                    ),
+                    title: Text(
+                      'I specialize in Django Framework.',
+                      style: TextStyle(
+                        fontFamily: 'Lato-Light',
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    textColor: Colors.black,
+                    iconColor: Colors.redAccent,
+                  ),
+                ),
+              ]),
         ),
         // backgroundColor: Colors.pink,
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: IconButton(
-              onPressed: () {},
-              color: Colors.lightBlueAccent,
-              icon: const Icon(
-                Icons.add,
-                color: Colors.pink,
-              )),
-        ),
       ),
     );
   }
